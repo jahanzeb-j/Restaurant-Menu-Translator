@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/firstpage"
+    tools:context=".MainActivityHome" >
+
+   
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp" >
+
+    <ImageView
+        android:id="@+id/imageViewsettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+       
+        android:onClick="settingsclick"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:gravity="center|clip_vertical" android:baselineAligned="false">
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher1camera"
+        android:layout_width="110dp"
+        android:layout_height="93dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:onClick="cameraaction" >
+    </ImageSwitcher>
+
+    <ImageSwitcher
+        android:id="@+id/ImageSwitcher01Gallery"
+        android:layout_width="110dp"
+        android:layout_height="95dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:onClick="galleryaction" >
+    </ImageSwitcher>
+</LinearLayout>
+
+</LinearLayout>
